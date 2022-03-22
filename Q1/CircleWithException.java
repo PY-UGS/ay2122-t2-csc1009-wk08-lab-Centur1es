@@ -8,7 +8,7 @@ public class CircleWithException extends Exception{
     }
 
     public void setRadius(double radius) {
-        if(radius<0) {
+        if(radius<=0) {
             throw new IllegalArgumentException("Radius cannot be smaller than 0");
         }
         this.radius = radius;
