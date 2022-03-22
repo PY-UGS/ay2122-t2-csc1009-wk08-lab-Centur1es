@@ -29,6 +29,9 @@ public class CheckingAccount {
     }
 
     public void deposit(double amount){
+        if(amount<=0) {
+            throw new IllegalArgumentException("you cannot deposit amount less or equal to 0");
+        }
         balance = balance+amount;
     }
 
